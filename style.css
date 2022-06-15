@@ -432,3 +432,7 @@ button:active {
 	color: #ffffff;
 	cursor: pointer;
 }
+
+figure.figure1, figure.figure2, figure.figure3, figure.figure4 {
+	cursor: pointer;
+}

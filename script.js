@@ -29,3 +29,28 @@ function onlynumber(evt) {
        if(theEvent.preventDefault) theEvent.preventDefault();
     }
  }
+
+const phone = document.getElementById("phone");
+
+phone.addEventListener('keypress', () => {
+     let phoneLength = phone.value.length
+
+     if (phoneLength === 0) {
+         phone.value += '('
+     }else if (phoneLength === 3) {
+         phone.value += ')'
+     }
+     else if (phoneLength === 9) {
+        phone.value += '-'
+     }
+    });
+
+const date = document.getElementById("date")
+
+date.addEventListener('keypress', () => {
+    let dateLength = date.value.length
+
+    if (dateLength === 2 || dateLength === 5) {
+        date.value += '/'
+    }
+});
